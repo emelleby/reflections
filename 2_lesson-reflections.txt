@@ -3,3 +3,14 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	Adding it to the staging area makes it kind of ready to go into "production". Value? I don't know.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	I can keep some older copy of the project to do something new. Refactor code or other stuff.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	If to branches have a small change to same line of code then you get a conflict. Conflicts can be solved when merging if you open the conflict file
+	and look for <<<<< or ||||| or HEAD. Then resolve the conflict and run 'git commit -a' if resolved merger will go through. 
+	To abort merger run 'git merge --abort'
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	The merger will do it automatically if possible and point the way to differences when conflicts are present.
